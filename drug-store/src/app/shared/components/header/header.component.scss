@@ -1,0 +1,115 @@
+.header {
+  color: #fff;
+  margin: 0 auto;
+  height: 132px;
+
+  .sub-header-top {
+    display: flex;
+    justify-content: space-between;
+
+    .sub-header-top-left {
+      display: inherit;
+      align-items: center;
+
+      .phone-group {
+        display: flex;
+        align-items: center;
+        background: #003cbf;
+        padding: 4px 12px;
+        border-radius: 20px;
+      }
+    }
+
+    .sub-header-top-right {
+      display: inherit;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(158, 186, 237, .5);
+        margin: 12px 0;
+        line-height: 20px;
+        padding: 0 10px;
+
+        &:last-child {
+          border: none;
+        }
+
+        &.user-group {
+          display: flex;
+          align-items: center;
+        }
+
+        &.start-group {
+          display: flex;
+
+          .start {
+            width: 24px;
+            height: 24px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  .sub-header-body {
+    display: flex;
+    align-items: flex-start;
+
+    .logo {
+      width: 195px;
+    }
+
+    .group-product {
+      color: #000;
+      display: flex;
+      align-items: center;
+      height: 54px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 0 10px;
+      margin-left: 16px;
+    }
+
+    .group-search {
+      flex: 40% 1;
+      flex-direction: row;
+      position: relative;
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        height: 54px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(15, 61, 145, .12);
+
+        input {
+          border: unset;
+          width: 100%;
+          outline: none;
+          padding: 5px 10px;
+          text-overflow: ellipsis;
+          color: #000;
+        }
+      }
+    }
+    .group-cart {
+      display: flex;
+      right: 0;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(0, 60, 191);
+      width: 140px;
+      height: 54px;
+      border-radius: 12px;
+    }
+  }
+}
